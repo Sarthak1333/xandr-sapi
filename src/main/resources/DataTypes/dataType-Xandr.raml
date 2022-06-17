@@ -1,0 +1,29 @@
+#%RAML 1.0 DataType
+description: pending
+type: object
+properties:
+  firstName:
+    type: string
+    example: John
+    required: false 
+  lastName:
+    type: string
+    example: John
+    required: false 
+  age:
+    type: number
+    example: 23
+    required: false 
+  Data:
+    type: string
+    example: Xandr
+    required: false 
+  Id:
+    type: number
+    example: 2
+    required: false 
+  address:
+    type: !include ../DataTypes/data-Type-address.raml
+  phoneNumbers:
+    type: !include ../DataTypes/dataType-phoneNumbers.raml
+    

@@ -9,6 +9,8 @@ protocols:
   put:
     body:
       application/json:
+        type: !include ../DataTypes/dataType-Xandr.raml
+        example: !include ../example/xandr.json
     responses:
       200:
         description: ok
@@ -17,6 +19,8 @@ protocols:
   post:
     body:
       application/json:
+        type: !include ../DataTypes/dataType-Xandr.raml
+        example: !include ../example/xandr.json
     responses:
       200:
         description: ok
